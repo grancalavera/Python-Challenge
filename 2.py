@@ -1,5 +1,15 @@
 # http://www.pythonchallenge.com/pc/def/ocr.html
 # find rare characters in the mess below:
+
+# rare
+# adjective ( rarer , rarest )
+# (of an event, situation, or condition) not occurring very often : a rare genetic 
+# disorder | [with infinitive ] it's rare to meet someone who's content with their 
+# life.
+# - (of a thing) not found in large numbers and consequently of interest or value : 
+# the jellyfish tree, one of the rarest plants on earth.
+# - unusually good or remarkable : he plays with rare strength and sensitivity.
+
 chars ="""%%$@_$^__#)^)&!_+]!*@&^}@[@%]()%+$&[(_@%+%$*^@$^!+]!&_#)_*}{}}!}_]$[%}@[{_@#_^{*
 @##&{#&{&)*%(]{{([*}@[@&]+!!*{)!}{%+{))])[!^})+)$]#{*+^((@^@}$[**$&^{$!@#$%)!@(&
 +^!{%_$&@^!}$_${)$_#)!({@!)(^}!*^&!$%_&&}&_#&@{)]{+)%*{&*%*&@%$+]!*__(#!*){%&@++
@@ -1221,4 +1231,8 @@ $#_}*!(+([_&%{^&[([%]}*^{{([@+@]@*&@_!]_+([(#&!]]#$$#]@#{_]][_{@]{*))$({%}_![@$]
 }!)$]&($)@](+(#{$)_%^%_^^#][{*[)%}+[##(##^{$}^]#&(&*{)%)&][&{]&#]}[[^^&[!#}${@_(
 #@}&$[[%]_&$+)$!%{(}$^$}*"""
 
-print ''.join(set([(c) for c in chars]))
+print ''.join(set([c for c in chars]))
+# !#%$&)(+*@[]_^aeilquty{}
+# anagram solver http://wordsmith.org/anagram/anagram.cgi?anagram=aeilquty&t=1000&a=n
+# equality
+# http://www.pythonchallenge.com/pc/def/equality.html
