@@ -7,7 +7,14 @@ _from = 'abcdefghijklmnopqrstuvwxyz'
 _to = 'cdefghijklmnopqrstuvwxyxab'
 table = string.maketrans(_from, _to)
 
-print string.translate(crypto, table)
+
+def solve(message):
+    return string.translate(message, table)
+
+print solve(crypto)
 
 url = """http://www.pythonchallenge.com/pc/def/map.html"""
-print string.translate(url, table)
+print solve(url)
+
+hint = """ynnjw rm rfc dgjclykc md rfgq nyec, zsr lmr rfc cvrclqgml"""
+print solve(hint)
